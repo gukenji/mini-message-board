@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    h1= title
+    h2 Create message
+
+<form method="POST" action="/new">
+  <label for="user">Author</label>
+  <input type="text" id="user" name="user"><br><br>
+  <label for="text">Message:</label>
+  <input type="text" id="text" name="text"><br><br>
+  <input type="submit" id="submit"/>
+</form>
